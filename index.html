@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style-common.css">
+    <link rel="stylesheet" href="./assets/css/style-header.css">
+    <link rel="stylesheet" href="./assets/css/style-sidebar.css">
+    <link rel="stylesheet" href="./assets/css/style-content.css">
+    <link rel="stylesheet" href="./assets/css/style-responsive.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="./assets/img/youtube-icon.png"/>
+    <title>Youtube</title>
+</head>
+<body>
+    <div id="page--cover">
+
+    </div>
+    <div id="header">
+        <div id="header--left">
+            <span class="material-symbols-outlined icon" id="res--sidebar">menu</span>
+            <img class="image" src="./assets/img/youtube-logo.svg" alt="Youtube logo">
+            <p id="yt-lang">VN</p>
+        </div>
+        <div id="header--mid">
+            <span class="material-symbols-outlined return--icon">
+                arrow_back
+                </span>
+            <div id="text--search">
+                <div class="search--box">
+                    <span class="material-symbols-outlined icon1 search--icon">search</span>
+                    <span class="material-symbols-outlined icon2">keyboard</span>
+                    <input id="search--input" type="text" placeholder="Tìm kiếm">
+                </div>
+                <span class="material-symbols-outlined search--btn" style="cursor: pointer;">search</span>
+            </div>
+            <div class="voice--search">
+                <span class="material-symbols-outlined icon-bold">mic</span>
+            </div>
+        </div>
+        <div id="header--right">
+            <div id="search--gone">
+                <span id="header--trigger" class="material-symbols-outlined icon3">search</span>
+                <span class="material-symbols-outlined icon-bold icon4">mic</span>
+            </div>
+            <span class="material-symbols-outlined icon1">video_call</span>
+            <span class="material-symbols-outlined icon2">notifications</span>
+            <div id="acc--logo">
+                <img class="acc--img" src="./assets/img/channel.jpg" alt="Acc-img">
+                <div id="acc--more" class="no--hov">
+                    <div id="acc--info-box">
+                        <div class="info--box-c1">
+                            <img class="info--box-img" src="./assets/img/channel.jpg" alt="Acc-img">
+                        </div>
+                        <div class="info--box-c2">
+                            <div class="info--box-c2-r1">Đinh Lê Dũng</div>
+                            <div class="info--box-c2-r2">dinhledung@email.com</div>
+                            <div class="info--box-c2-r3">Quản lý Tài khoản Google của bạn</div>
+                        </div>
+                    </div>
+                    <div class="horizon--lin" style="position: relative; top: 96px"></div>
+                    <div id="under--acc-info">
+    
+                        <div class="info--box">
+                            <div class="info--box-ele">
+                                <span class="material-symbols-outlined icon">account_box</span>
+                                <p class="info--box-ele-text">Kênh của bạn</p>
+                            </div>
+                            <div class="info--box-ele">
+                                <span class="material-symbols-outlined icon">play_circle</span>
+                                <p class="info--box-ele-text">Youtube Studio</p>
+                            </div>
+                            <div class="info--box-ele move--next">
+                                <span class="material-symbols-outlined icon">switch_account</span>
+                                <p class="info--box-ele-text">Chuyển đổi tài khoản</p>
+                                <span class="material-symbols-outlined move--next-icon">navigate_next</span>
+                            </div>
+                            <div class="info--box-ele">
+                                <span class="material-symbols-outlined icon">logout</span>
+                                <p class="info--box-ele-text">Đăng xuất</p>
+                            </div>
+                        </div>
+                        <div class="horizon--lin"></div>
+                        <div class="info--box">
+                            <div class="info--box-ele">
+                                <span class="material-symbols-outlined icon">monetization_on</span>
+                                <p class="info--box-ele-text">Giao dịch mua và gói thành viên</p>
+                            </div>
+                            <div class="info--box-ele">
+                                <span class="material-symbols-outlined icon">shield_person</span>
+                                <p class="info--box-ele-text">Dữ liệu của bạn trong Youtube</p>
+                            </div>
+                        </div>
+                        <div class="horizon--lin"></div>
+                        <div class="info--box">
+                            <div class="info--box-ele move--next">
+                                <span class="material-symbols-outlined icon">mode_night</span>
+                                <p class="info--box-ele-text">Giao diện: Giao diện thiết bị</p>
+                                <span class="material-symbols-outlined move--next-icon">navigate_next</span>
+                            </div>
+                            <div class="info--box-ele move--next">
+                                <span class="material-symbols-outlined icon">translate</span>
+                                <p class="info--box-ele-text">Ngôn ngữ: Tiếng Việt</p>
+                                <span class="material-symbols-outlined move--next-icon">navigate_next</span>
+                            </div>
+                            <div class="info--box-ele move--next">
+                                <span class="material-symbols-outlined icon">admin_panel_settings</span>
+                                <p class="info--box-ele-text">Chế độ hạn chế: Đã tắt</p>
+                                <span class="material-symbols-outlined move--next-icon">navigate_next</span>
+                            </div>
+                            <div class="info--box-ele move--next">
+                                <span class="material-symbols-outlined icon">language</span>
+                                <p class="info--box-ele-text">Địa điểm: Việt Nam</p>
+                                <span class="material-symbols-outlined move--next-icon">navigate_next</span>
+                            </div>
+                            <div class="info--box-ele">
+                                <span class="material-symbols-outlined icon">keyboard</span>
+                                <p class="info--box-ele-text">Phím tắt</p>
+                            </div>
+                        </div>
+                        <div class="horizon--lin"></div>
+                        <div class="info--box">
+                            <div class="info--box-ele move--next">
+                                <span class="material-symbols-outlined icon">settings</span>
+                                <p class="info--box-ele-text">Cài đặt</p>
+                            </div>
+                        </div>
+                        <div class="horizon--lin"></div>
+                        <div class="info--box">
+                            <div class="info--box-ele">
+                                <span class="material-symbols-outlined icon">help</span>
+                                <p class="info--box-ele-text">Trợ giúp</p>
+                            </div>
+                            <div class="info--box-ele">
+                                <span class="material-symbols-outlined icon">feedback</span>
+                                <p class="info--box-ele-text">Gửi ý kiến phản hồi</p>
+                            </div>
+                        </div>
+                        <div class="horizon--lin"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subheader">
+        <p class="subheader--ele selected">Tất cả</p>
+        <p class="subheader--ele">Âm nhạc</p>
+        <p class="subheader--ele">Trò chơi</p>
+        <p class="subheader--ele">Toán học</p>
+        <p class="subheader--ele">Trực tiếp</p>
+        
+        
+    </div>
+
+    <div id="sidebar">
+        <!-- Sidebar short -->
+        <div class="sidebar1--ele">
+            <span class="material-symbols-outlined icon-bold">home</span>
+            <p class="sidebar1--text">Trang chủ</p>
+        </div>
+        <div class="sidebar1--ele">
+            <span class="material-symbols-outlined">trail_length_short</span>
+            <p class="sidebar1--text">Shorts</p>
+        </div>
+        <div class="sidebar1--ele">
+            <span class="material-symbols-outlined">subscriptions</span>
+            <p class="sidebar1--text">Kênh đăng ký</p>
+        </div>
+        <div class="sidebar1--ele">
+            <span class="material-symbols-outlined">video_library</span>
+            <p class="sidebar1--text">Thư viện</p>
+        </div>
+
+
+        <!-- Sidebar long -->
+        <div class="sidebar2--ele sidebar--selected">
+            <span class="material-symbols-outlined sidebar2--icon icon-bold">home</span>
+            <p class="sidebar2--text">Trang chủ</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">trail_length_short</span>
+            <p class="sidebar2--text">Shorts</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">subscriptions</span>
+            <p class="sidebar2--text">Kênh đăng ký</p>
+        </div>
+
+        <!-- Horizon line -->
+        <div class="sidebar2--ele horizontal"></div>
+
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">video_library</span>
+            <p class="sidebar2--text">Thư viện</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">history</span>
+            <p class="sidebar2--text">Video đã xem</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">smart_display</span>
+            <p class="sidebar2--text">Video của bạn</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">schedule</span>
+            <p class="sidebar2--text">Xem sau</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">thumb_up</span>
+            <p class="sidebar2--text">Video đã thích</p>
+        </div>
+
+        <div class="sidebar2--ele horizontal"></div>
+
+        <!-- Discovery -->
+        <div class="sidebar2--ele no--hover">
+            <p class="sidebar2--text sidebar2--ele-title">Khám phá</p>
+        </div>
+        
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">local_fire_department</span>
+            <p class="sidebar2--text">Thịnh hành</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">music_note</span>
+            <p class="sidebar2--text">Âm nhạc</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">stadia_controller</span>
+            <p class="sidebar2--text">Trò chơi</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">newspaper</span>
+            <p class="sidebar2--text">Tin tức</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">trophy</span>
+            <p class="sidebar2--text">Thể thao</p>
+        </div>
+
+        <div class="sidebar2--ele horizontal"></div>
+
+        <!-- Setting -->
+
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">settings</span>
+            <p class="sidebar2--text">Cài đặt</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">flag</span>
+            <p class="sidebar2--text">Nhật ký báo cáo</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">help</span>
+            <p class="sidebar2--text">Trợ giúp</p>
+        </div>
+        <div class="sidebar2--ele">
+            <span class="material-symbols-outlined sidebar2--icon">feedback</span>
+            <p class="sidebar2--text">Gửi ý kiến phản hồi</p>
+        </div>
+
+        <div class="sidebar2--ele horizontal"></div>
+
+        <div class="endpage end--ele">
+            <p class="endpage--text">Giới thiệu</p>
+            <p class="endpage--text">Báo chí</p>
+            <p class="endpage--text">Bản quyền</p>
+            <p class="endpage--text">Liên hệ với chúng tôi</p>
+            <p class="endpage--text">Người sáng tạo</p>
+            <p class="endpage--text">Quảng cáo</p>
+            <p class="endpage--text">Nhà phát triển</p>
+        </div>
+
+        <div class="endpage1 end--ele">
+            <p class="endpage--text">Điều khoản</p>
+            <p class="endpage--text">Quyền riêng tư</p>
+            <p class="endpage--text">Chính sách và an toàn</p>
+            <p class="endpage--text">Cách YouTube hoạt động</p>
+            <p class="endpage--text">Thử các tính năng mới</p>
+        </div>
+        <div class="endpage2 end--ele">
+            <p class="endpage--ctext">© 2023 Google LLC</p>
+        </div>
+
+
+    </div>
+
+    <div id="content">
+        <div id="main--content">
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main--ele">
+                <div class="video--info-row1">
+                    <img class="video--thumbnail" src="./assets/img/thumbnail/thumbnail1.jpg" alt="Video thumbnail">
+                    <p class="video--time">8:09</p>
+                </div>
+                <div class="video--info-row2">
+                    <div class="video--info-row2-col1">
+                        <img class="video--channel-logo" src="./assets/img/channel.jpg" alt="Chanel logo">
+                    </div>
+                    <div class="video--info-row2-col2">
+                        <p class="video--title">Dạng bài ĐƠN ĐIỆU hàm số đa thức - Phương trình ĐẠO HÀM...</p>
+                        <p class="video--channel-name">Ôn thi cùng Dũng</p>
+                        <p class="video--stats">100 N lượt xem <strong>&#183</strong> 3 giờ trước</p>
+                    </div>
+                    <div class="video--info-row2-col3">
+                        <span class="material-symbols-outlined icon more--setting">more_vert</span>
+                        <div class="video--setting">
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_play</span>
+                                <p class="setting--ele-txt">Thêm vào danh sách chờ</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">schedule</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách Xem sau</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">playlist_add</span>
+                                <p class="setting--ele-txt">Lưu vào danh sách phát</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">share</span>
+                                <p class="setting--ele-txt">Chia sẻ</p>
+                            </div>
+                            <div class="horizon--line"></div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">block</span>
+                                <p class="setting--ele-txt">Không quan tâm</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">do_not_disturb_on</span>
+                                <p class="setting--ele-txt">Không đề xuất kênh này</p>
+                            </div>
+                            <div class="setting--ele">
+                                <span class="material-symbols-outlined setting--ele-icon">flag</span>
+                                <p class="setting--ele-txt">Báo vi phạm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="./assets/js/xml-parser.js"></script>
+    <script src="./assets/js/header-script.js"></script>
+    <script src="./assets/js/content-script.js"></script>
+    <script src="./assets/js/sidebar-responsive-script.js"></script>
+</body>
+</html>

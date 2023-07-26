@@ -1,0 +1,336 @@
+#header--left a {
+    height: 56px;
+}
+
+#header {
+    scrollbar-width: none;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    height: 56px;
+    width: 100%;
+    z-index: 300;
+    background-color: white;
+}
+
+/* Left section */
+#header--left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    width: 169px;
+    height: 100%;
+}
+
+#header--left .icon {
+    padding: 8px;
+    border-radius: 50%;
+}
+
+
+#header--left .image {
+    height: 20px;
+    padding: 18px 14px 18px 16px;
+    cursor: pointer;
+}
+
+#yt-lang {
+    color: #606060;
+    font-size: 10px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+/* Mid section */
+#header--mid {
+    position: relative;
+    display: flex;
+    flex: 1;
+    max-width: 732px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+#header--mid .return--icon {
+    position: absolute;
+    padding: 8px;
+    font-weight: bold !important;
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#header--mid .search--box {
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+.search--box .icon1 {
+    position: absolute;
+    line-height: 40px;
+    font-size: 24px !important;
+    padding: 0px 14px;
+}
+
+.search--box .icon2 {
+    position: absolute;
+    line-height: 40px;
+    font-size: 24px !important;
+    right: 8px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.search--box #search--input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-left: 44px;
+    padding-right: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #d3d3d3;
+    box-shadow: inset 0.5px 0.5px #c9c9c9;
+    outline-width: thin;
+    outline-color: #1C62B9;
+}
+
+#header--mid .search--btn {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 64px;
+    height: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+}
+
+#header--mid #text--search {
+    display: flex;
+    flex: 1;
+    margin-left: 40px;
+    padding: 0px 4px;
+}
+
+#header--mid .voice--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    margin-left: 12px;
+    border-radius: 50%;
+    background-color: #eceaeaac;
+    cursor: pointer;
+}
+
+/* Right section */
+#header--right {    
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 225px;
+    height: 100%;
+}
+
+#header--right .icon1 {
+    margin-right: 6px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#header--right .icon2 {
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 4px;
+}
+
+#acc--logo {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#acc--logo .acc--img {
+    width: 32px;
+    border-radius: 50%;
+}
+
+#search--gone {
+    display: none;
+    height: 24px;
+    align-items: center;
+}
+
+#search--gone .icon3,
+#search--gone .icon4 {
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+/* Subheader */
+#subheader {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    position: fixed;
+    padding-left: 24px;
+    background-color: white;
+    top: 56px;
+    height: 56px;
+    width: 100%;
+    z-index: 100;   
+}
+
+#subheader .subheader--ele {
+    font-size: 14px;
+    background-color: #eceaeaac;
+    color: black;
+    line-height: 20px;
+    padding: 6px 12px;
+    border-radius: 11px;
+}
+
+/* Acc-logo */
+#acc--more {
+    display: none;
+    position: absolute;
+    width: 300px;
+    background-color: white;
+    right: 48px;
+    top: 0px;
+    height: 83.5vh;
+    border-radius: 10px;
+    border: #ffeaea solid 1px;
+    box-shadow: 0.5px 0.5px 5px #cacaca;
+}
+
+#acc--more .horizon--lin {
+    height: 1px;
+    width: 100%;
+    background-color: #E5E5E5;
+    margin-top: 8px;
+    cursor: default;
+}
+
+#acc--info-box {
+    position: fixed;
+    display: flex;
+    padding: 16px 16px 8px 16px;
+    z-index: 700;
+    cursor: default;
+}
+
+#under--acc-info {
+    position: relative;
+    overflow: scroll;
+    top: 97px;
+    height: 100%;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.info--box-ele:hover {
+    background-color: #F2F2F2
+}
+
+
+#acc--info-box .info--box-c1 {
+    width: 56px;
+}
+
+.info--box-c1 .info--box-img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+#acc--info-box .info--box-c2 {
+    flex: 1
+}
+
+.info--box-c2-r1,
+.info--box-c2-r2 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #0F0F0F;
+}
+
+.info--box-c2-r3 {
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #065FD4;
+    cursor: pointer;
+}
+
+.info--box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+.info--box-ele {
+    display: flex;
+    align-items: center;
+    padding: 0px 36px 0px 16px;
+    height: 40px;
+}
+
+.move--next {
+    padding: 0px 16px !important;
+}
+
+.info--box-ele .icon {
+    margin-right: 16px;
+}
+
+.info--box-ele-text {
+    flex: 1;
+    margin: 0px;
+    font-size: 16px;
+    letter-spacing: -0.9px;
+}
+
+/* Hover section  */
+#header--left .icon:hover,
+#header--right .icon1:hover,
+#header--right .icon2:hover,
+#header--right .icon3:hover,
+#header--right .icon4:hover,
+#header--mid .return--icon:hover,
+#subheader .subheader--ele:hover {
+    cursor: pointer;
+    background-color: #E5E5E5;
+    transition: background-color 0.1s;
+}
+
+#header--mid .search--btn:hover {
+    background-color: #F0F0F0;
+    transition: background-color 0.1s;
+}
+
+.search--box .icon2:hover {
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+#header--mid .voice--search:hover {
+    background-color: #D9D9D9;
+    transition: background-color 0.1s;
+}
